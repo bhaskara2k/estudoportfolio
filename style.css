@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, button, input, select, textarea{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    background: var(--dark-color);
+}
+
+
+
+:root{
+    --marine-blue: #5280E2;
+    --aqua-blue: #15CDCB;
+    --dark-color: #212226;
+    --light-gray: #E0DEDE;
+    --menu--height: 65px;
+}
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+p{
+    color: var(--light-gray);
+}
+
+button{
+    background: var(--marine-blue);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+header{
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1{
+    color: var(--aqua-blue);
+}
+
+header .container button{
+    margin-top: 40px;
+}
+
+nav{
+    display: flex;
+    height: var(--menu--height);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    background: var(--dark-color);
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 18px;
+    color: var(--aqua-blue);
+    text-decoration: none;
+    margin: 0 35px;
+
+}
+
+section{
+    height: 1500px;
+    background: var(--marine-blue);
+}
