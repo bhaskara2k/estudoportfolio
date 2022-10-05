@@ -103,8 +103,10 @@ nav ul a {
     font-size: 16px;
     color: var(--aqua-blue);
     text-decoration: none;
-    
+}
 
+nav ul a svg{
+    display: none;
 }
 
 section{
@@ -151,12 +153,19 @@ section{
     header .container{
         padding: 0 40px;
     }
+
+
 }
 
 @media (max-width: 390px){
-    nav ul a{
-        font-size: 10px;
+    nav ul a svg{
+        display: block;
     }
+
+    nav ul a {
+        font-size: 0;
+    }
+    
     header .container img{
         display: inline;
         margin-bottom: 20px;
@@ -165,6 +174,6 @@ section{
 
 @media (max-width:270px){
     nav ul a{
-        font-size: 5px;
+        font-size: 0px;
     }
 }
