@@ -53,6 +53,14 @@ button{
 
 }
 
+.title-aqua{
+    color: var(--aqua-blue);
+}
+
+.title-marine{
+    color: var(--marine-blue);
+}
+
 header{
     height: calc(100vh - 65px);
     display: flex;
@@ -109,9 +117,41 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    height: 1500px;
-    background: var(--marine-blue);
+.about-me{
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container{
+    text-align: center;
+    width: 50%;
+    position: relative;
+}
+
+.about-me .img-container img{
+    width: 70%;
+    height: 100%;
+}
+
+.about-me .img-container .line{
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--aqua-blue);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+
+}
+
+.about-me .img-container .line.green{
+    transform: rotate(-3.3deg);
+    color: var(--marine-blue);
 }
 
 /* responsividade */
@@ -154,6 +194,13 @@ section{
         padding: 0 40px;
     }
 
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        top: unset;
+    }
+
 
 }
 
@@ -165,7 +212,7 @@ section{
     nav ul a {
         font-size: 0;
     }
-    
+
     header .container img{
         display: inline;
         margin-bottom: 20px;
@@ -177,3 +224,4 @@ section{
         font-size: 0px;
     }
 }
+
