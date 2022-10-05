@@ -94,6 +94,7 @@ nav{
     position: sticky;
     top: 0;
     background: var(--dark-color);
+    z-index: 99;
 }
 
 nav img {
@@ -156,6 +157,30 @@ nav ul a svg{
 
 /* responsividade */
 /* tablet */
+
+@media (max-width: 1000px){
+
+.about-me{
+    flex-direction: column;
+}
+.about-me .container, .about-me .img-container{
+    width: 100%;
+}
+
+.about-me .container{
+    padding-right: 0;
+
+}
+
+.about-me .img-container{
+    margin: 70px 0;
+}
+
+
+
+
+}
+
 @media (max-width: 767px) {
 
     header .container{
@@ -167,6 +192,7 @@ nav ul a svg{
     header .container img{
         display: inline;
         margin-bottom: 70px;
+        object-fit: cover;
     }
 
     nav {
@@ -201,6 +227,15 @@ nav ul a svg{
         top: unset;
     }
 
+   .about-me .container p{
+   font-size: 15px;
+
+}
+
+.about-me{
+    padding: 40px;
+}
+
 
 }
 
@@ -219,7 +254,7 @@ nav ul a svg{
 }
 }
 
-@media (max-width:270px){
+@media (max-width:290px){
     nav ul a{
         font-size: 0px;
     }
