@@ -193,6 +193,71 @@ nav ul a svg{
     margin-left: 10px;
 }
 
+.portfolio{
+    padding: 0 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    background: url(./assets/bg.png);
+}
+
+.portfolio .portfolio-container{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.portfolio .portfolio-container .portfolio-card img{
+    width: 280px;
+    border-radius: 10px;
+}
+
+.portfolio .portfolio-container .portfolio-card{
+background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(21px);
+border-radius: 16px;
+max-width: 360px;
+text-align: left;
+padding: 50px 20px;
+}
+
+.portfolio-card + .portfolio-card{
+    margin-left: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+
+.portfolio .portfolio-container .portfolio-card .img-container{
+    margin: 0px 25px 50px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container{
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li{
+    color: var(--aqua-blue);
+    border: 1px solid var(--aqua-blue);
+    border-radius: 14px;
+    padding: 4px 20px;
+}
+
+.portfolio-card .language-container ul li + li{
+    margin-left: 10px;
+
+}
+
 /* responsividade */
 /* tablet */
 
@@ -214,8 +279,24 @@ nav ul a svg{
     margin: 70px 0;
 }
 
+.services .services-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
 
+.servieces-card{
+    height: 394px;
+}
 
+.services-card + .services-card{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.services{
+    padding: 0;
+}
 
 }
 
@@ -275,6 +356,7 @@ nav ul a svg{
 }
 
 
+
 }
 
 @media (max-width: 390px){
@@ -290,11 +372,19 @@ nav ul a svg{
         display: inline;
         margin-bottom: 20px;
 }
+
+.services .services-container{
+    padding: 0 20px;
+}
+
 }
 
 @media (max-width:290px){
     nav ul a{
         font-size: 0px;
     }
+
+
+
 }
 
