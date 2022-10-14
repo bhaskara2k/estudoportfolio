@@ -15,24 +15,24 @@
             <h2>Hello,</h2>
             <h1>I am Hiago Medeiros</h1>
             <p>Estou estudando HTML, CSS e JS e já tenho alguns projetos, gosto bastante de interfaces.</p>
-            <button>Entre em contato</button>
+            <button onclick="window.open('https://api.whatsapp.com/send?phone=5584981258743')"> Entre em contato </button>
         </div>
 
     </header>
 
     <nav> <img src="./assets/logo3.png" alt="logo">
     <ul>
-        <a href=""><i data-feather="user"></i> Sobre mim</a>
-        <a href=""><i data-feather="briefcase"></i>Serviços</a>
-        <a href=""><i data-feather="image"></i>Portfólio</a>
-        <a href=""><i data-feather="list"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#aboutme"><i data-feather="user"></i> Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
     </ul>
     
     
     </nav>
 
-    <section class="about-me">
+    <section id="aboutme" class="about-me">
         <div class="container">
             <h1 class="title-aqua">Sobre mim</h1>
             <p>Potiguar de 22 anos, trabalho como analista de redes e dados. Curso Tecnologia da informação pela Universidade Federal Rural do Semi-Árido. E desde 2022 estudo desenvolvimento frontend usando: html, css, js. Atualmente estou estudando com o framework Vue Js.
@@ -48,7 +48,7 @@
 
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <h1 class="title-marine">Serviços</h1>
 
         <div class="services-container">
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <h1 class="title-aqua">Portfólio</h1>
 
     <div class="portfolio-container">
@@ -134,7 +134,7 @@
     </div>
 </section>
 
-<section class="curriculum">
+<section id="curriculum" class="curriculum">
     <h1 class="title-aqua">Currículo</h1>
     <div class="container">
         <img class="curriculum-img"src="./assets/imagem.png">
@@ -159,6 +159,21 @@
 
 </section>
 
+<section id="contact" class="contact">
+    <h1>Vamos trabalhar juntos?</h1>
+    <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo! </p>
+    <button class="contact-button" onclick="window.open('https://api.whatsapp.com/send?phone=5584981258743')"> Entre em contato </button>
+
+    <div class="social-media">
+        <a href="https://www.instagram.com/bhaskara2k"><img src="./assets/Vector.png"></a>
+        <a href="https://www.youtube.com/bhaskara2k"><img src="./assets/youtube.png"></a>
+        <a href="https://www.linkedin.com/in/hiago-medeiros-8b39971a6/"><img src="./assets/linkedin.png"></a>
+        <a href="https://api.whatsapp.com/send?phone=5584981258743"><img src="./assets/whatsapp.png"></a>
+    </div>
+
+</section>
+
+<footer> <p> Made by Hiago Medeiros - 2022 </p> </footer>
 
 <script>
     feather.replace()
